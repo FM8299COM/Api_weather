@@ -24,5 +24,9 @@ window.addEventListener('load', function(){
         let Humidity = document.getElementById('Humidity')
         Humidity.innerHTML = data_json.main.humidity
 
+        let Tempsajut = document.getElementById('Tempsajut')
+        Tempsajut.innerHTML = data_json.main.feels_like
+
+
     })
 })
