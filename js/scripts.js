@@ -14,19 +14,23 @@ window.addEventListener('load', function(){
         
         let TempS = document.getElementById('TempS')
         TempS.innerHTML = data_json.main.temp
+        TempS.innerHTML += "°C"
 
         let TempMin = document.getElementById('TempMin')
         TempMin.innerHTML = data_json.main.temp_min
+        TempMin.innerHTML += "°C"
 
         let TempMax = document.getElementById('TempMax')
         TempMax.innerHTML = data_json.main.temp_max
+        TempMax.innerHTML += "°C"
 
         let Humidity = document.getElementById('Humidity')
         Humidity.innerHTML = data_json.main.humidity
+        Humidity.innerHTML += "%"
 
         let Tempsajut = document.getElementById('Tempsajut')
         Tempsajut.innerHTML = data_json.main.feels_like
-
+        Tempsajut.innerHTML += "°C"
 
     })
 })
